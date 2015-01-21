@@ -1,3 +1,5 @@
+2015年01月21日09:24:41  模仿一个网站：http://www.pipe-king.com.tw/Products/Products_Type2list
+
 #DUXCMS 2.0 开发版
 
 DUXCMS是一款针对于中小网站与二次开发平台的一款管理系统，基于thinkphp框架，后台采用拼图UI，更加利于多平台使用于开发者快速开发
