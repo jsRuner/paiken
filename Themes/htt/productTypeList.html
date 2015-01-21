@@ -1,0 +1,65 @@
+<!--#include file="head.html"-->
+<ul id="breadCrumb">
+    <li><a href="/">HOME</a></li>
+    <li><a href="/Products">產品介紹</a></li>
+    <li><a href="/Products">{$parentCateInfo['name']}</a></li>
+
+    <li>{$currentCateInfo['name']}</li>
+</ul>
+<div id="main">
+    <div id="sidebar">
+        <h3>產品介紹 Catalog</h3>
+        <h4><strong>PIPE KING</strong>METAL PRODUCT CO., LTD.</h4>
+        <dl>
+            <!--channel{app="DuxCms" label="categoryList" parent_id=1  limit=5}-->
+            <dt><a href="__ACTION__/class_id/{$channel['class_id']}"  <!--if{$currentClassId == $channel['class_id']}--> class="current"  <!--{/if}-->   >{$channel.name}</a></dt>
+            <dd  <!--if{$currentClassId == $channel['class_id']}--> class="current"  <!--{/if}--> >
+
+            <!--list{app="DuxCms" label="categoryList" parent_id=$channel['class_id']  limit=10}-->
+            <a href="{$list.curl}">{$list.name}</a>
+            <p>
+            <!--list{app="DuxCms" label="categoryList" parent_id=$list['class_id']  limit=10}-->
+            
+            
+            <a href="{$list.curl}">{$list.name}</a>
+            <!--{/list}-->
+            
+            </p>
+            <!--{/list}-->
+            </dd>
+            <!--{/channel}-->
+            
+        </dl>
+        </div><!-- sidebar //-->
+        <div id="content" ng-controller="ctrl">
+            
+            <h3 id="products">
+            {$currentCateInfo['name']}
+            </h3>
+            <p>
+              <!--   本公司產品系列有美標 (ASTM / ASME / ANSI), 德標 (DIN), 英標 (BS), 日標 (JIS), 俄標 (GOST), 歐標(EN) 等等各國規格型號, 也可以根據客戶提供的產品圖面或樣品來生產加工出口! -->
+              {$currentCateInfo['description']}
+            </p>
+            <cite>(進一步詳細說明, 請點擊產品照片)</cite>
+            <ol class="prolist2">
+
+
+                <!--list{app="DuxCms" label="categoryList" parent_id=$currentCateInfo['class_id'] limit=10}-->
+              <li>
+            <a class="kind" href="{U('Home/index/productTypeContent',array('class_id'=>$list.class_id))}">{$list.name}</a>
+            <em><a href="/C161308_PipeKing/Products/ANSI" target="_blank">B16.5, Class 150, Class 300, Class 600, Class 900.</a></em>
+        </li>
+<!--{/list}-->
+            </ol>
+
+            <div class="align-c">
+    <a class="btn" onclick="javascript:window.history.back();">回上頁</a>
+    <a class="btn" href="{U('Home/index/productList',array('class_id'=>$currentClassId))}">回列表</a>
+</div>
+
+
+            </div><!-- content //-->
+        </div>
+        
+        </div><!--container //-->
+        <!--#include file="foot.html"

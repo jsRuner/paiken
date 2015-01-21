@@ -1,0 +1,87 @@
+<?php if (!defined('THINK_PATH')) exit(); include \Think\Template\Driver\Dux :: template(C('VIEW_PATH'). C('TPL_NAME').'/head_en'.C('TMPL_TEMPLATE_SUFFIX')); ?>
+
+
+                
+                <div id="main">
+                    <div id="sidebar">
+
+
+                <h3>產品介紹 Catalog</h3>
+                <h4><strong>PIPE KING</strong>METAL PRODUCT CO., LTD.</h4>
+
+                <dl>
+                    <!-- 當前頁加上class="current" ex.<a class="current">，非當前頁就拿掉current -->
+                            <dt><a href="/Products/Products_Type2list/131909#breadCrumb">不鏽鋼法蘭</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133266#breadCrumb">鍛造碳鋼法蘭</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133268#breadCrumb">碳鋼焊接管件</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133270#breadCrumb">鑄鐵牙零件</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133272#breadCrumb">立布</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133274#breadCrumb">電用金屬軟管 (馬口鐵)</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133276#breadCrumb">橡膠防震軟管</a></dt>
+                            <dt><a href="/Products/Products_Type2list/133278#breadCrumb">溝槽式管件</a></dt>
+
+                    
+                </dl>
+
+
+
+            </div>
+                        <div id="content" ng-controller="ctrl" class="ng-scope">
+                
+<script src="/Scripts/angular/angular.min.js"></script>
+<script src="/Scripts/comments.js"></script>
+<h3>產品諮詢</h3>
+<form ng-submit="Master_Submit()" class="ng-pristine ng-valid ng-valid-maxlength ng-valid-email">
+    <em>公司名稱:</em>
+    <input type="text" ng-model="fd.company_name" maxlength="24" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength"><br>
+    <em>地址:</em>
+    <input type="text" class="size-l ng-pristine ng-untouched ng-valid ng-valid-maxlength" ng-model="fd.address" maxlength="50">
+
+    <em>郵遞區號:</em>
+    <input type="text" class="size-s ng-pristine ng-untouched ng-valid ng-valid-maxlength" ng-model="fd.post_code" maxlength="3"><br>
+
+    <em>國家/地區:</em>
+    <input type="text" ng-model="fd.area" maxlength="24" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength"><br>
+
+    <em>連絡人:</em>
+    <input type="text" ng-model="fd.contact_person" maxlength="24" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength">
+
+    <em>職務:</em>
+    <input type="text" ng-model="fd.post" maxlength="15" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength">
+
+    <em>性別:</em>
+    <input type="radio" name="sex" ng-model="fd.sex" ng-true-value="male" id="r1" class="ng-pristine ng-untouched ng-valid">
+    <label for="r1"><span></span>男</label>
+    <input type="radio" name="sex" ng-model="fd.sex" ng-true-value="female" id="r2" class="ng-pristine ng-untouched ng-valid">
+    <label for="r2"><span></span>女</label><br>
+
+    <em>電話:</em>
+    <input type="tel" ng-model="fd.tel" maxlength="10" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength">
+
+    <em>傳真:</em>
+    <input type="tel" ng-model="fd.tel_fax" maxlength="10" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength"><br>
+
+    <em>手機:</em>
+    <input type="tel" ng-model="fd.mobile" maxlength="10" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength"><br>
+
+    <em>電子郵箱:</em>
+    <input type="email" ng-model="fd.email" maxlength="50" class="ng-pristine ng-untouched ng-valid ng-valid-maxlength ng-valid-email">
+
+    <em>網站:</em>
+    <input type="text" class="size-l ng-pristine ng-untouched ng-valid" ng-model="fd.website"><br>
+
+    <em>留言內容:</em>
+    <textarea ng-model="fd.contents" class="ng-pristine ng-untouched ng-valid"></textarea>
+
+    <p class="align-l">
+        <button type="submit">送出諮詢</button>
+    </p>
+</form>
+            </div>
+
+            
+</div><!-- main //-->
+</div><!--container //-->
+
+
+<?php include \Think\Template\Driver\Dux :: template(C('VIEW_PATH'). C('TPL_NAME').'/foot_en'.C('TMPL_TEMPLATE_SUFFIX')); ?>

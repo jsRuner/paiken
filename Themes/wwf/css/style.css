@@ -1,0 +1,324 @@
+body{
+	background: #fff;
+	background: url('../images/bg.jpg') repeat-x;
+font: normal 0.813em/140% Arial,sans-serif;
+}
+/*页面容器的边距消除*/
+.wrap{
+	padding: 0;
+	width: 980px;
+}
+/*导航条的底部外边界的消除*/
+#wwfnav{
+	margin-bottom: 0px;
+}
+/*消除反色导航的背景色*/
+.navbar-default{
+	background-color:  #cdd2d8;
+}
+.navbar-inverse{
+	background-color:  #cdd2d8;
+}
+/*导航条的高度*/
+.navbar-right{
+	/*height: 25px;*/
+}
+/*导航的链接左侧色条*/
+.navbar-nav>li>a{
+	border-left: 5px solid #4A7894;
+	margin-top: 17px;
+	line-height: 18px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+/*修改链接反色效果*/
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+	background: #4A7894;
+	color: #fff;
+}
+/*繁体与英语的样式*/
+#wwfnav02>li>a {
+	display: block;
+	padding-left: 10px;
+	font-size: 13px;
+	font-family: '微軟正黑體', 'Microsoft JhengHei', Georgia, sans-serif;
+	font-weight: bold;
+	color: #4A7894;
+	border-width: 0px;
+}
+#wwfnav02>li>a:hover,.wwf-nav02>li>a:focus{
+	color: #C1272D;
+	background-color: #cdd2d8;
+}
+/*灯箱的高度,避免影响背景的灰色条*/
+#carousel-example-generic{
+	margin-top: 3px;
+	
+}
+/*灯箱右下角的圆点
+todo:需要移动到右侧
+*/
+.wwfcarousel-indicators{
+	position: absolute;
+	right: 0;
+	bottom: ;
+	width: 75px;
+}
+
+/*底部版权的样式*/
+#footer{
+	height: 84px;
+	background: #0c2c3b;
+	padding-top: 30px;
+}
+.copyright{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+	text-indent: 0;
+	font-size: 0.8em;
+	color: #fff;
+}
+
+/*内容区域*/
+.content{
+	padding-bottom: 84px;
+margin: 25px 0 33px 0;
+	overflow: hidden;
+background: url('../images/bg_main.jpg') repeat-y;
+clear: both;
+}
+
+
+/*      sidebar
+-----------------------------------------------------------------------*/
+#sidebar {
+    float: left;
+    width: 245px;
+}
+
+#sidebar h3 {
+    width: 245px;
+    height: 60px;
+    background: url('../images/h3_catalog.gif') no-repeat;
+    text-indent: -9999px;
+    margin-bottom: 12px;
+}
+#sidebar h3.eng {background-image: url('../../images/h3_catalog2.gif')}
+#sidebar h4 {
+    margin: 0 15px 15px 15px;
+    font-size: 14px;
+}
+
+    #sidebar h4 strong {
+        display: block;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+#sidebar dl {
+    margin: 15px;
+}
+
+#sidebar dt {
+    background: url('../../images/dot.gif') repeat-x;
+    color: #808080;
+    padding: 13px 0 7px 0;
+    margin-top: 5px;
+    clear: both;
+}
+
+    #sidebar dt a {
+        display: block;
+        color: #444;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+        #sidebar dt a:hover,
+        #sidebar dt .current {
+            color: #C1272D;
+        }
+
+#sidebar dd {
+    display: none;
+    margin-left: -3px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+    #sidebar dd a {
+        display: block;
+        color: #7097AD;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 5px 0;
+        margin-left: 5px;
+    }
+
+        #sidebar dd a:hover,
+        #sidebar dd .current {
+            color: #B0353B;
+        }
+
+#sidebar p {
+    text-indent: 0;
+    margin: 0 0 8px 15px;
+    padding: 0;
+    overflow: hidden;
+}
+
+    #sidebar p a {
+        display: inline-block;
+        float: left;
+        border: 1px solid #e7e7e7;
+        color: #777;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 2px 8px;
+        margin: 2px;
+        -moz-transition: background .5s ease;
+        -o-transition: background .5s ease;
+        transition: background .5s ease;
+        overflow: hidden;
+        *display: inline;
+        *zoom: 1;
+    }
+
+        #sidebar p a:hover,
+        #sidebar p .current {
+            background: #7097AD;
+            color: #fff;
+        }
+
+#sidebar .current { display: block;}
+
+/*导航碎片*/
+#breadCrumb {
+    float: right;
+    margin-top: 8px;
+    position: relative;
+}
+
+    #breadCrumb li {
+        float: left;
+        margin-left: 6px;
+        color: #C1272D;
+    }
+
+        #breadCrumb li a {
+            padding-right: 12px;
+            color: #4D4D4D;
+            background: url('../../images/arrow.gif') no-repeat right center;
+        }
+
+            #breadCrumb li a:hover {
+                color: #4A7894;
+            }
+
+
+
+#content {
+    float: right;
+    font-size: 1.154em;
+    line-height: 170%;
+    width: 690px;
+    margin-top: 17px;
+    padding: 0 0 0 15px;
+}
+
+/*      content
+-----------------------------------------------------------------------*/
+#content h3 {
+    background:url('../images/h3_products.gif') no-repeat;
+    height:42px;
+    margin-left:-15px;
+    margin: 0 0 10px -15px;
+    color: #333;
+    font: bold 19px/20px '微軟正黑體', 'Microsoft JhengHei', Georgia, sans-serif;
+    clear:both;
+ }
+#content h3#products {
+ text-indent:156px;
+ }
+.AboutUs #content h3 {
+ text-indent:135px;
+ background-image: url('../images/h3_about.gif');
+ }
+.Comments #content h3 {
+    text-indent: 145px;
+    background-image: url('../images/title_comment.gif');
+}
+.ContactUs #content h3 {
+    text-indent: 156px;
+    background-image: url('../images/title_contact.gif');
+}
+
+.Products .align-c { margin-top: 15px;}
+
+
+/*产品图表*/
+/*-- 產品圖片列表 --*/
+.album {
+    margin: 20px -19px 20px 0;
+    *zoom:1;
+}
+/* 列表樣式 */
+.album li {
+    display: inline-block;
+    text-align: center;
+    margin:0 19px 10px 0;
+    *display:inline;
+    *zoom:1;
+}
+/* 圖片連結&外框 */
+.album a {
+    background:url('../images/bg_pro1.png') no-repeat 28px 0;
+    text-align:center; vertical-align: middle;
+    display: block;
+    float:left;
+    position: relative;
+    padding:10px 11px;
+    width:190px; height:155px;
+    overflow:hidden;
+}
+/* 圖片 */
+.album img {
+    /* 最多寬度134px */
+    max-width:134px;
+    margin-bottom:16px;
+
+    /* 最小高度110px  */
+    min-height:110px;
+
+    overflow:hidden;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/* 圖片::滿版 (最多高度110px) */
+.pic_full img { max-height:110px; }
+
+/* 圖說 */
+.album a em {
+    display:block;
+    width:100%;
+    padding-bottom:8px;
+
+    font-size: .85em;
+    word-wrap:break-word;
+    color:#000;
+    line-height: 130%;
+    background:url('../images/line.gif') no-repeat center bottom;
+    transition:color 0.5s;
+
+    position: absolute;
+    top:137px;
+    left:0px;
+}
+.album a:hover em {
+    color:#C1272D;
+}
+/*-- 產品圖片列表 end --*/
